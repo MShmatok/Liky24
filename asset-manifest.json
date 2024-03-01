@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/liky24/static/css/main.cd2e038f.css",
+    "main.js": "/liky24/static/js/main.07d3183d.js",
+    "index.html": "/liky24/index.html",
+    "main.cd2e038f.css.map": "/liky24/static/css/main.cd2e038f.css.map",
+    "main.07d3183d.js.map": "/liky24/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd2e038f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
