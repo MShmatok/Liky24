@@ -6,7 +6,6 @@ const instance = axios.create({
 
 export const fetchAllShopsAPI = async () => {
   const { data } = await instance.get('/shops');
-  console.log(data);
   return data;
 };
 

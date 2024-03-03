@@ -6,7 +6,7 @@ const ShopSection = () => {
   return (
     <>
       <ContainerShop>
-        <h1>ShopSection</h1>
+        <h1>Shops:</h1>
         <ShopList />
       </ContainerShop>
     </>

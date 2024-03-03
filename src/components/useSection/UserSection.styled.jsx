@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import theme from 'commonStyle/variables';
 
-export const ContainerShop = styled.div`
-  flex-basis: 300px;
-  height: 100%;
+export const ContainerUserSection = styled.div`
+  width: 50%;
+  height: 75%;
 
   padding: 10px;
   background-color: ${theme.colors.primaryLight};

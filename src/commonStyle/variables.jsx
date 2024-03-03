@@ -10,6 +10,11 @@ const theme = Object.freeze({
     body: '#edf2f7',
     primaryAccent: '#407BFF',
     secondaryBlue: '#9EBBFF',
+    secondaryGrayBG: '#F7F7FB',
+    secondaryGrayBorder2: '#8a8a8933',
+    shadowInputDropDown: '#00000005',
+    secondaryGrayText: '#12141733',
+    secondaryLight: '#8A8A89',
   },
   fontSizes: {
     tiny: '12px',

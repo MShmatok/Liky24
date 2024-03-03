@@ -3,7 +3,7 @@ export const handleFetchAllShops = (state, { payload }) => {
 };
 
 export const handleFetchAllProductsByShop = (state, { payload }) => {
-  state.data.shopProducts = payload;
+  state.shopProducts = payload;
 };
 
 export const handlerAddWater = (

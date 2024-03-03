@@ -1,12 +1,11 @@
 import React from 'react';
-import { ContainerShopList } from './ShopItem.styled';
-import { Button } from 'commonStyle/Button.styled';
+import { ContainerShopItem } from './ShopItem.styled';
 
-const ShopItem = ({ title }) => {
+const ShopItem = ({ title, selectShop, statusActive }) => {
   return (
-    <ContainerShopList>
-      <button>{title}</button>
-    </ContainerShopList>
+    <ContainerShopItem className={statusActive ? 'active' : ''}>
+      <button onClick={selectShop}>{title}</button>
+    </ContainerShopItem>
   );
 };
 

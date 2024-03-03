@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import theme from 'commonStyle/variables';
 
 export const ShopListST = styled.div`
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  width: 844px;
   height: 100%;
 
   padding: 10px;
@@ -12,6 +13,10 @@ export const ShopListST = styled.div`
   border-radius: 4px;
 
   overflow-y: auto;
+
+  span {
+    color: ${theme.colors.primaryAccent};
+  }
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -26,3 +31,5 @@ export const ShopListST = styled.div`
     width: 1px;
   }
 `;
+
+export const ControlPanel = styled.div``;

@@ -18,7 +18,7 @@ import { rootReducer } from './root/slice';
 const PersistConfig = {
   key: 'root',
   storage,
-  whitelist: ['favoriteList'],
+  whitelist: ['favoriteList', 'preOrder'],
 };
 
 export const store = configureStore({
