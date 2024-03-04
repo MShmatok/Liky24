@@ -1,5 +1,5 @@
 import React from 'react';
-import { ControlPanel, ShopListST } from './ProductsSection.styled';
+import { ShopListST } from './ProductsSection.styled';
 import ProductsList from './productsList/ProductsList';
 import { useSelector } from 'react-redux';
 import {
@@ -11,14 +11,6 @@ import SortPanel from './productsList/sortPanel/SortPanel';
 const ProductsSection = () => {
   const shops = useSelector(selectorAllShops);
   const currentShop = useSelector(selectorCurrentShop);
-
-  // const toggleSort = product => {
-  //   if (preOrder.some(order => order._id === product._id)) {
-  //     dispatch(deletePreOrder(product));
-  //   } else {
-  //     dispatch(addPreOrder(product));
-  //   }
-  // };
 
   return (
     <ShopListST>
