@@ -1,7 +1,6 @@
-import UserSection from 'components/useSection/UserSection';
 import { SectionST } from 'pages/shop/Shop.styled';
 import React from 'react';
-import { ContainerMainSection, ContainerSummerySection } from './Cart.styled';
+import { ContainerMainSection } from './Cart.styled';
 import CartSection from 'components/cartSection/CartSection';
 import TotalSection from 'components/totalSection/TotalSection';
 import { useDispatch, useSelector } from 'react-redux';
@@ -9,7 +8,6 @@ import { useFormik } from 'formik';
 import { userProfileSchema } from '../../js/validation/schemas';
 import UseProfileSection from 'components/useProfileSection/UseProfileSection';
 import { selectPreOrder } from '../../redux/data/selectors';
-import { clearPreOrder } from '../../redux/data/slice';
 import { fetchSendDataThunk } from '../../redux/data/thunk';
 
 const Cart = () => {
@@ -23,7 +21,6 @@ const Cart = () => {
     values,
     touched,
     errors,
-    setFieldValue,
     handleSubmit,
     handleChange,
     handleBlur,

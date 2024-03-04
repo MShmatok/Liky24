@@ -1,16 +1,5 @@
-import {
-  handleClearPreOrder,
-  handleEditWater,
-  handlerAddWater,
-  handlerDeleteWater,
-} from './handlers';
-import {
-  addWatersThunk,
-  deleteEntryThunk,
-  editWatersThunk,
-  fetchAllProductsByShopThunk,
-  fetchSendDataThunk,
-} from './thunk';
+import { handleClearPreOrder } from './handlers';
+import { fetchAllProductsByShopThunk, fetchSendDataThunk } from './thunk';
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchAllShopsThunk } from './thunk';
 import { handleFetchAllShops, handleFetchAllProductsByShop } from './handlers';
