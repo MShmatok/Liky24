@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { DropDownBrands, InputPriceST, LabelST } from './SortPanel.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
 
 import { setSortType } from '../../../../redux/data/slice';
 import { selectSort } from '../../../../redux/data/selectors';
@@ -29,10 +28,6 @@ const SortPanel = () => {
       document.removeEventListener('click', handleClickOutSide);
     };
   }, []);
-
-  //   useEffect(() => {
-  //     dispatch(setSortType(values.price));
-  //   }, [dispatch, values.price]);
 
   return (
     <LabelST ref={ref}>
@@ -66,8 +61,4 @@ const SortPanel = () => {
   );
 };
 
-SortPanel.propTypes = {
-  values: PropTypes.object,
-  setFieldValue: PropTypes.func,
-};
 export default SortPanel;

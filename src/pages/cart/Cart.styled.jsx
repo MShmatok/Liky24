@@ -3,7 +3,7 @@ import theme from 'commonStyle/variables';
 
 export const ContainerMainSection = styled.div`
   width: 75%;
-  height: 75%;
+  height: 100%;
 
   padding: 10px;
   background-color: ${theme.colors.primaryLight};
