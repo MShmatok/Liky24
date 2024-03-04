@@ -1,8 +1,8 @@
 {
-  "name": "liky24",
+  "name": "Liky24",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://MShmatok.github.io/liky24",
+  "homepage": "https://MShmatok.github.io/Liky24-front",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.16.3",
