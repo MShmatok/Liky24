@@ -9,7 +9,7 @@ const Header = () => {
           <nav>
             <RouterLink to={'/'}>Shop</RouterLink>
             <RouterLink to={'/cart'}>Shopping cart</RouterLink>
-            <RouterLink to={'/history'}>History</RouterLink>
+            {/* <RouterLink to={'/history'}>History</RouterLink> */}
           </nav>
         </HeaderST>
       </div>

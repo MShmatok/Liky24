@@ -58,7 +58,7 @@ const CartItem = ({ order }) => {
         <span className="total">
           {Number(order?.count * order?.price).toFixed(2)} ₴
         </span>
-        <button onClick={hendleDeleteProduct}>
+        <button type="button" onClick={hendleDeleteProduct}>
           <svg width="24" height="24">
             <use href={icons + '#close'}></use>
           </svg>
