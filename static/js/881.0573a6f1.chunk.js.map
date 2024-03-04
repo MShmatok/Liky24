@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/881.0573a6f1.chunk.js","mappings":"iIAMA,UAJgB,WACd,OAAOA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,WACd,C","sources":["pages/history/History.jsx"],"sourcesContent":["import React from 'react';\r\n\r\nconst History = () => {\r\n  return <div>History</div>;\r\n};\r\n\r\nexport default History;\r\n"],"names":["_jsx","children"],"sourceRoot":""}

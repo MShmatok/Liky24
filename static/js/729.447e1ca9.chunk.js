@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkLiky24=self.webpackChunkLiky24||[]).push([[729],{2729:function(e,n,i){i.r(n);i(2791);var c=i(184);n.default=function(){return(0,c.jsx)("div",{className:"container",children:(0,c.jsx)("div",{children:"NotFoundPage"})})}}}]);
+//# sourceMappingURL=729.447e1ca9.chunk.js.map
