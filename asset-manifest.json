@@ -1,13 +1,24 @@
 {
   "files": {
     "main.css": "/liky24/static/css/main.cd2e038f.css",
-    "main.js": "/liky24/static/js/main.07d3183d.js",
+    "main.js": "/liky24/static/js/main.7458c3ed.js",
+    "static/js/542.7f2d1faf.chunk.js": "/liky24/static/js/542.7f2d1faf.chunk.js",
+    "static/js/809.dbcd492f.chunk.js": "/liky24/static/js/809.dbcd492f.chunk.js",
+    "static/js/881.0573a6f1.chunk.js": "/liky24/static/js/881.0573a6f1.chunk.js",
+    "static/js/729.d568ec98.chunk.js": "/liky24/static/js/729.d568ec98.chunk.js",
+    "static/js/306.fa1ac707.chunk.js": "/liky24/static/js/306.fa1ac707.chunk.js",
+    "static/media/sprite.svg": "/liky24/static/media/sprite.ac200cec52b949ebfcf83eb8793b9667.svg",
     "index.html": "/liky24/index.html",
     "main.cd2e038f.css.map": "/liky24/static/css/main.cd2e038f.css.map",
-    "main.07d3183d.js.map": "/liky24/static/js/main.07d3183d.js.map"
+    "main.7458c3ed.js.map": "/liky24/static/js/main.7458c3ed.js.map",
+    "542.7f2d1faf.chunk.js.map": "/liky24/static/js/542.7f2d1faf.chunk.js.map",
+    "809.dbcd492f.chunk.js.map": "/liky24/static/js/809.dbcd492f.chunk.js.map",
+    "881.0573a6f1.chunk.js.map": "/liky24/static/js/881.0573a6f1.chunk.js.map",
+    "729.d568ec98.chunk.js.map": "/liky24/static/js/729.d568ec98.chunk.js.map",
+    "306.fa1ac707.chunk.js.map": "/liky24/static/js/306.fa1ac707.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.7458c3ed.js"
   ]
 }

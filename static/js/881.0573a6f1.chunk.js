@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkliky24=self.webpackChunkliky24||[]).push([[881],{8881:function(e,i,n){n.r(i);n(2791);var u=n(184);i.default=function(){return(0,u.jsx)("div",{children:"History"})}}}]);
+//# sourceMappingURL=881.0573a6f1.chunk.js.map
