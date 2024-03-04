@@ -38,7 +38,7 @@ const createRouter = () => {
         ],
       },
     ],
-    { basename: '/liky24' }
+    { basename: '/' }
   );
   return router;
 };
