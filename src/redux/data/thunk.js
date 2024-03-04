@@ -1,7 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { editWaters, addWaters, deleteEntry } from 'API/dataAPI';
-import { fetchAllShopsAPI } from 'API/dataAPI';
+import { fetchAllShopsAPI, sendDataAPI } from 'API/dataAPI';
 import { fetchAllProductsByShopAPI } from 'API/dataAPI';
 import { toast } from 'react-toastify';
 
@@ -31,37 +30,14 @@ export const fetchAllProductsByShopThunk = createAsyncThunk(
   }
 );
 
-export const addWatersThunk = createAsyncThunk(
-  'water/addWaters',
-  async (newWaterUsed, { rejectWithValue }) => {
+export const fetchSendDataThunk = createAsyncThunk(
+  'data/fetchSendData',
+  async (data, { rejectWithValue }) => {
     try {
-      const data = await addWaters(newWaterUsed);
-      return data;
+      const response = await sendDataAPI(data);
+      return response;
     } catch (error) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
-export const editWatersThunk = createAsyncThunk(
-  'water/editWaters',
-  async (inputData, { rejectWithValue }) => {
-    try {
-      const data = await editWaters(inputData);
-
-      return data;
-    } catch (error) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
-
-export const deleteEntryThunk = createAsyncThunk(
-  'water/deleteEntry',
-  async (waterId, { rejectWithValue }) => {
-    try {
-      await deleteEntry(waterId);
-      return waterId;
-    } catch (error) {
+      toast.error(` Something's wrong. Unable to show month data!`);
       return rejectWithValue(error.message);
     }
   }

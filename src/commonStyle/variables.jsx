@@ -14,6 +14,8 @@ const theme = Object.freeze({
     secondaryGrayBorder2: '#8a8a8933',
     shadowInputDropDown: '#00000005',
     secondaryGrayText: '#12141733',
+    secondaryGrayTextGlobal: '#797878',
+
     secondaryLight: '#8A8A89',
   },
   fontSizes: {

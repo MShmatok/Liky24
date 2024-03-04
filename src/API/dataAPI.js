@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:3001/api',
+  // baseURL: 'http://localhost:3001/api',
+  baseURL: 'https://liky24-back.onrender.com/api/',
 });
 
 export const fetchAllShopsAPI = async () => {
@@ -14,19 +15,7 @@ export const fetchAllProductsByShopAPI = async shopId => {
   return data;
 };
 
-export const addWaters = async newWaterUsed => {
-  const { data } = await instance.post('/water', newWaterUsed);
-  return data;
-};
-
-export const deleteEntry = async waterId => {
-  await instance.delete(`/water/${waterId}`);
-};
-
-export const editWaters = async ({ newWaterUsed, id }) => {
-  const { data } = await instance.patch(
-    `/water/${id}/waterVolume`,
-    newWaterUsed
-  );
+export const sendDataAPI = async body => {
+  const { data } = await instance.post(`/orders`, body);
   return data;
 };

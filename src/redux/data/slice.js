@@ -1,4 +1,5 @@
 import {
+  handleClearPreOrder,
   handleEditWater,
   handlerAddWater,
   handlerDeleteWater,
@@ -8,6 +9,7 @@ import {
   deleteEntryThunk,
   editWatersThunk,
   fetchAllProductsByShopThunk,
+  fetchSendDataThunk,
 } from './thunk';
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchAllShopsThunk } from './thunk';
@@ -29,7 +31,9 @@ const dataSlice = createSlice({
     addPreOrder(state, { payload }) {
       state.preOrder.push({ ...payload, count: 1 });
     },
-
+    clearPreOrder(state, { payload }) {
+      state.preOrder = [];
+    },
     deletePreOrder(state, { payload }) {
       const indexDelete = state.preOrder.findIndex(
         order => order._id === payload._id
@@ -51,6 +55,12 @@ const dataSlice = createSlice({
       );
       state.favoriteList.splice(indexDelete, 1);
     },
+    handleProductCount(state, { payload }) {
+      const index = state.preOrder.findIndex(
+        order => order._id === payload._id
+      );
+      state.preOrder[index].count = payload.count;
+    },
   },
 
   extraReducers: builder => {
@@ -60,10 +70,7 @@ const dataSlice = createSlice({
         fetchAllProductsByShopThunk.fulfilled,
         handleFetchAllProductsByShop
       )
-
-      .addCase(addWatersThunk.fulfilled, handlerAddWater)
-      .addCase(deleteEntryThunk.fulfilled, handlerDeleteWater)
-      .addCase(editWatersThunk.fulfilled, handleEditWater);
+      .addCase(fetchSendDataThunk.fulfilled, handleClearPreOrder);
   },
 });
 
@@ -75,4 +82,6 @@ export const {
   setIdShop,
   deleteFavorite,
   addFavorite,
+  handleProductCount,
+  clearPreOrder,
 } = dataSlice.actions;

@@ -2,15 +2,16 @@ import styled from 'styled-components';
 import theme from 'commonStyle/variables';
 
 export const CartItemST = styled.li`
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
   width: 100%;
   height: auto;
   padding: 10px;
   border-bottom: 1px solid ${theme.colors.secondGrey};
-  border-radius: 8px;
+  .containerMain {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
   img {
     width: 64px;
     height: auto;
@@ -25,7 +26,6 @@ export const CartItemST = styled.li`
   .description {
     width: 50%;
     overflow-x: hidden;
-    text-
   }
 
   .price {
@@ -35,20 +35,18 @@ export const CartItemST = styled.li`
   .total {
     width: 20%;
   }
-  .containerInput{
+  .containerInput {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
-  .inputBtn{
-
+  .inputBtn {
     background-color: transparent;
     font-size: 36px;
     font-weight: 400;
-
   }
-  .inputBox{
+  .inputBox {
     width: 56px;
     height: 40px;
 
@@ -61,5 +59,22 @@ export const CartItemST = styled.li`
     border-radius: 8px;
 
     text-align: center;
+  }
+
+  button {
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+      scale: 1.2;
+    }
+  }
+
+  .shopDetail {
+    padding: 0 15px;
+    font-size: 12px;
+    color: ${theme.colors.primaryDark};
+    span {
+      color: ${theme.colors.secondaryGrayText};
+    }
   }
 `;

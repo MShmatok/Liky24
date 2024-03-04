@@ -30,20 +30,3 @@ export const ContainerMainSection = styled.div`
     margin-bottom: 15px;
   }
 `;
-
-export const ContainerSummerySection = styled.div`
-  width: 25%;
-  height: 75%;
-
-  padding: 10px;
-  background-color: ${theme.colors.primaryLight};
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
- 
-
-  h1 {
-    margin-bottom: 15px;
-  }
-`;

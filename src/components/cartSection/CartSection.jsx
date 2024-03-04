@@ -12,7 +12,6 @@ const CartSection = () => {
       {preOrder.map(order => {
         return <CartItem key={order._id} order={order} />;
       })}
-      <CartItem />
     </CartList>
   );
 };

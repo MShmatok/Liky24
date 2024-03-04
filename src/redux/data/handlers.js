@@ -6,6 +6,10 @@ export const handleFetchAllProductsByShop = (state, { payload }) => {
   state.shopProducts = payload;
 };
 
+export const handleClearPreOrder = (state, { payload }) => {
+  state.preOrder = [];
+};
+
 export const handlerAddWater = (
   state,
   { payload: { _id, waterVolume, date, owner } }
